@@ -1,4 +1,5 @@
 # Strategy Design Pattern:  
+    + Thuộc loại BehavioralPatterns(Hành vi).  
     + Vấn Đề: phương thức(Đoạn xữ lý) của một đối tượng thường phải thay đổi nhiều lần và ở nhiều nơi trong hệ thống.  
     + Giả Quyết: tạo ra từng nhóm riêng tách rời với hệ thống.  
     + Ưu Điểm: Tách ra khỏi hệ thống chính, không bị phụ thuộc (EDIT ONE FOR ALL), thay đổi được trong lúc runtime.  
