@@ -4,33 +4,5 @@ Strategy Design Pattern:
     + Ưu Điểm: Tách ra khỏi hệ thống chính, không bị phụ thuộc (EDIT ONE FOR ALL), thay đổi được trong lúc runtime
     
 
+<img src="https://user-images.githubusercontent.com/67057523/131106450-b7abd302-c9dc-467c-aef4-5b9729cb9d63.PNG" alt="Strategy Design Pattern" />
 
-                                        |--------------------------------------|
-                                        |                TICKET                |
-                                        |--------------------------------------|
-                                        | -price: double                       |
-                                        | -promoteStrategy: PromoteStrategy    |
-                                        | -name:string                         |
-                           |---------------------------------------------------------------------|
-                           |      +SetPromoteStrategy(promoteStrategy: PromoteStrategy): void    |
-                           |      +SetPrice(price: double): void                                 |
-                           |      +GetPromoted(): double                                         |
-                           |_____________________________________________________________________|
-                                                            ^
-                                                            |
-                                                            |
-                                        |-------------------------------------|
-                                        |            <<interface>>            |
-                                        |           IPromoteStrategy          |
-                                        |-------------------------------------|
-                ----------------------->| +DoDiscount(price: double): double  |<-------------------------
-                |                       |_____________________________________|                         |
-                |                                          ^                                            |
-                |                                          |                                            |
-                |                                          |                                            |
-                |                                          |                                            |
-|-------------------------------------|       |--------------------------------------|      |--------------------------------------|
-|        NoDiscountStrategy           |       |        QuarterDiscountStrategy       |      |          HalfDiscountStrategy        |
-|_____________________________________|       |--------------------------------------|      |--------------------------------------|
-| + DoDiscount(price: double): double |       |  + DoDiscount(price: double): double |      |  + DoDiscount(price: double): double |
-|_____________________________________|       |______________________________________|      |______________________________________|
