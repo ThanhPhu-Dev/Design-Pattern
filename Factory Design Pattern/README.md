@@ -9,3 +9,4 @@
  - Vấn Đề: Khi có quá nhiều Object cần phân loại theo cụm nhưng dùng Factory method lại 
    chưa làm được tùy biến tạo các phân loại đó theo method (nghĩa là muốn tạo ra phần loại tùy biến trong Runtime)
  - Giải Quyết: tạo ra 1 class abstract hoặc interface quản lý tạo các method được tạo tùy biến theo logic.
+ - Ưu Điểm: Khi hệ thống nhiều Object và muốn phân thành cụm, nếu hệ thống đơn giản nên dùng factory method.
