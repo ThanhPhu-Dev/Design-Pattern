@@ -10,8 +10,7 @@ import java.util.Random;
 /**
  * tạo ngẫu nhiên 1 object.
  */
-public class RandomAnimalFactory implements IAnimalFactory{
-    @Override
+public class RandomAnimalFactory{
     public IAnimal createAnimal() {
         Random random = new Random();
         int index = random.nextInt(3);

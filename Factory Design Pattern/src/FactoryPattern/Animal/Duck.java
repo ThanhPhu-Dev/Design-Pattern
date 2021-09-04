@@ -1,6 +1,9 @@
 package FactoryPattern.Animal;
 
-public class Duck implements IAnimal{
+/**
+ * nếu dùng factory method chỉ cần impl IAnimal
+ */
+public class Duck extends TwoLegsAnimal{
     @Override
     public String getName() {
         return "Duck";

@@ -6,11 +6,11 @@ import FactoryPattern.Animal.Duck;
 import FactoryPattern.Animal.IAnimal;
 
 /**
- * Class làm nhiệm vụ tạo lần lượt mỗi khi gọi.
+ * Class làm nhiệm vụ tạo lần lượt theo thử tự mỗi khi gọi.
  */
-public class BasicAnimalFactory implements IAnimalFactory{
+public class BasicAnimalFactory{
     int index = 0;
-    @Override
+
     public IAnimal createAnimal() {
         if(index == 0){
             index++;
